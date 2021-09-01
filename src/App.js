@@ -40,9 +40,8 @@ function App() {
   };
 
   const deleteContact = contactId => {
-    setContacts(prevState => ({
-      contacts: prevState.contacts.filter(contact => contact.id !== contactId),
-    }));
+    setContacts(contacts=> contacts.filter(contact => contact.id !== contactId),
+    );
   };
 
   const changeFilter = e => {
