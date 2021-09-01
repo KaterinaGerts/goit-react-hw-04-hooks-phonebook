@@ -23,7 +23,7 @@ export default function ContactList({ contacts, onDeleteContact }) {
 ContactList.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,      
+      id: PropTypes.string.isRequired,
     }),
-  )
+  ),
 };
